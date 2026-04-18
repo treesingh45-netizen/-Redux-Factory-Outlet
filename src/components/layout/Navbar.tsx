@@ -4,7 +4,7 @@ import { ShoppingBag, Menu, X, Search, User } from 'lucide-react';
 import { useCart } from '../../context/CartContext';
 import { cn } from '../../lib/utils';
 import { motion, AnimatePresence } from 'motion/react';
-import logoUrl from '../../assets/logo.png';
+import logoUrl from '../../assets/logo.jpg';
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
