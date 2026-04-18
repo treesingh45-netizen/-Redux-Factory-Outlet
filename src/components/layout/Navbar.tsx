@@ -4,7 +4,7 @@ import { ShoppingBag, Menu, X, Search, User } from 'lucide-react';
 import { useCart } from '../../context/CartContext';
 import { cn } from '../../lib/utils';
 import { motion, AnimatePresence } from 'motion/react';
-import logoUrl from '../../assets/logo.jpg';
+import { TextLogo } from '../ui/TextLogo';
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -46,12 +46,8 @@ export const Navbar = () => {
         </button>
 
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2 group shrink-0">
-          <img 
-            src={logoUrl} 
-            alt="Redux Factory Outlet" 
-            className="h-10 w-auto object-contain transition-transform group-hover:scale-105"
-          />
+        <Link to="/" className="flex items-center group shrink-0">
+          <TextLogo className="transform transition-transform group-hover:scale-105 origin-left" />
         </Link>
 
         {/* Desktop Nav */}
@@ -112,7 +108,7 @@ export const Navbar = () => {
               className="fixed top-0 left-0 h-full w-4/5 max-w-sm bg-white shadow-xl z-50 p-6 flex flex-col lg:hidden"
             >
               <div className="flex items-center justify-between mb-8">
-                <img src={logoUrl} alt="Redux" className="h-8 w-auto object-contain" />
+                <TextLogo />
                 <button onClick={() => setMobileMenuOpen(false)} className="p-2 text-gray-500 hover:text-black">
                   <X className="w-6 h-6" />
                 </button>
