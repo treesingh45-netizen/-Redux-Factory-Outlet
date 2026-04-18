@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, MapPin, Phone, Mail } from 'lucide-react';
+import logoUrl from '../../assets/logo.jpg';
 
 export const Footer = () => {
   return (
@@ -11,7 +12,7 @@ export const Footer = () => {
           {/* Brand Col */}
           <div className="space-y-6">
             <div className="bg-white inline-block p-2 rounded">
-               <img src="/logo.jpg" alt="Redux Factory Outlet" className="h-10 w-auto object-contain" />
+               <img src={logoUrl} alt="Redux Factory Outlet" className="h-10 w-auto object-contain" />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
               Your ultimate fashion destination in Karachi. Discover the latest trends, premium quality, and unbeatable style at Redux Factory Outlet.
