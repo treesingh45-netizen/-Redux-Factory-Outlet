@@ -45,7 +45,7 @@ export const Navbar = () => {
         </button>
 
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2 group">
+        <Link to="/" className="flex items-center gap-2 group shrink-0">
           <img 
             src="/logo.jpg" 
             alt="Redux Factory Outlet" 
